@@ -41,7 +41,7 @@ import Berita from "@/Components/Berita.vue";
 import Layanan from "@/Components/Layanan.vue";
 import VideoGallery from "@/Components/VideoGallery.vue";
 import Popup from "@/Components/Popup.vue";
-import videoSource from '/Users/apple/Documents/KerjaPraktik/pemkab/public/vid/VideoBeranda.mp4';
+const videoSource = '/vid/VideoBeranda.mp4';
 
 export default {
   components: {
