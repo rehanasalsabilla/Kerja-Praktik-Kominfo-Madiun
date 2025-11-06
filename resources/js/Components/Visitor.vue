@@ -2,7 +2,8 @@
   <div
     class="visitor-card flex flex-col items-center text-white rounded-full p-5 mx-auto relative mb-10"
   >
-    <div class="flex items-center justify-between space-x-4  ">
+    <div class="flex items-center justify-between space-x-4">
+      <!-- Tombol View -->
       <div class="flex flex-col items-start space-y-2 w-1/4">
         <button
           @click="changeView('harian')"
@@ -49,19 +50,19 @@
           <count-up :end-val="yearlyVisitorCount" :duration="2.5"></count-up>
         </p>
       </div>
-      <img :src="peopleImage" alt="Illustration" class="w-32 h-32" />
+
+      <!-- Gambar People -->
+      <img src="/img/people.png" alt="Illustration" class="w-32 h-32" />
     </div>
   </div>
 </template>
 
-
 <script>
 import CountUp from 'vue-countup-v3'; // Import the CountUp component
-import peopleImage from '/img/people.png';
 
 export default {
   components: {
-    CountUp, // Register the CountUp component
+    CountUp,
   },
   props: {
     todayVisitorCount: {
@@ -79,29 +80,23 @@ export default {
   },
   data() {
     return {
-      currentDate: new Date().toLocaleDateString("id-ID"), // Current date
-      currentView: "harian", // Default view is 'harian'
-      peopleImage, // Example image path
-      isVisible: false, // Track visibility state
+      currentView: "harian",
+      isVisible: false,
     };
   },
   mounted() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          // Check if the element is in view
           if (entry.isIntersecting) {
-            this.isVisible = true; // Set visibility to true
-            observer.unobserve(entry.target); // Stop observing after it's visible
+            this.isVisible = true;
+            observer.unobserve(entry.target);
           }
         });
       },
-      {
-        threshold: 0.5, // Trigger when 50% of the element is in view
-      }
+      { threshold: 0.5 }
     );
 
-    // Start observing the visitor count container
     observer.observe(this.$refs.countContainer);
   },
   methods: {
@@ -112,13 +107,11 @@ export default {
 };
 </script>
 
-
-
 <style scoped>
 .visitor-card {
-  height: 165px; /* Atur tinggi spesifik, sesuaikan dengan kebutuhan */
+  height: 165px;
   background-color: #064e3b;
-  background-image: url('/img/Visitor.png');
+  background-image: url('/img/Visitor.png'); /* gunakan path public */
   background-size: cover;
   background-position: center;
   width: 70%;
@@ -127,6 +120,4 @@ export default {
   margin-right: auto;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-
 </style>
