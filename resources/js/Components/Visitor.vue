@@ -57,7 +57,7 @@
 
 <script>
 import CountUp from 'vue-countup-v3'; // Import the CountUp component
-import peopleImage from "/Users/apple/Documents/KerjaPraktik/pemkab/public/img/people.png"; // Path gambar
+import peopleImage from '/img/people.png';
 
 export default {
   components: {

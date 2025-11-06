@@ -40,7 +40,7 @@
               <tr v-for="(doc, index) in paginatedDocuments" :key="doc.id" class="hover:bg-gray-100">
                 <td class="py-3 px-4 border-t border-b text-center">{{ currentPage * itemsPerPage + index + 1 }}</td>
                 <td class="py-3 px-4 border-t border-b flex ">
-                  <img src="/Users/apple/Documents/KerjaPraktik/pemkab/public/image/File.png" alt="File Icon" class="w-10 h-10 mr-2">
+                <img src="/image/File.png" alt="File Icon" class="w-10 h-10 mr-2">
                   {{ doc.document_name }}
                 </td>
                 <td class="py-3 px-4 border-t border-b text-center">{{ doc.upload_date }}</td>

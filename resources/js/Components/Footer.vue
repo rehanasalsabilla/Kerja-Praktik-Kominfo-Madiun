@@ -86,11 +86,11 @@
 </template>
 
 <script>
-import diskominfoImage from '/Users/apple/Documents/KerjaPraktik/pemkab/public/images/diskominfo.png';
-import youtubeImage from '/Users/apple/Documents/KerjaPraktik/pemkab/public/images/youtube.png';
-import instagramImage from '/Users/apple/Documents/KerjaPraktik/pemkab/public/images/instagram.png';
-import twitterImage from '/Users/apple/Documents/KerjaPraktik/pemkab/public/images/twitter.png';
-import facebookImage from '/Users/apple/Documents/KerjaPraktik/pemkab/public/images/facebook.png';
+import diskominfoImage from '/images/diskominfo.png';
+import youtubeImage from '/images/youtube.png';
+import instagramImage from '/images/instagram.png';
+import twitterImage from '/images/twitter.png';
+import facebookImage from '/images/facebook.png';
 
 export default {
   data() {

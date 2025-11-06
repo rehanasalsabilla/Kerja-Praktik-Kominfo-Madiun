@@ -67,7 +67,7 @@
 
 <script setup>
 import { ref, computed } from 'vue';
-import silat from "/Users/apple/Documents/KerjaPraktik/pemkab/public/images/madiun_silat.png"; // Path gambar
+import silat from '/images/madiun_silat.png';
 
 // Data Layanan
 const layananList = [
