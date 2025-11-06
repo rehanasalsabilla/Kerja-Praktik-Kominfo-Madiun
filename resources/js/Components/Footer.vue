@@ -86,7 +86,7 @@
 </template>
 
 <script>
-import diskominfoImage from '/images/diskominfo.png';
+import diskominfoImage from "@/../public/images/diskominfo.png";
 import youtubeImage from '/images/youtube.png';
 import instagramImage from '/images/instagram.png';
 import twitterImage from '/images/twitter.png';
