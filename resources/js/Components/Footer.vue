@@ -89,6 +89,5 @@
 
 <script>
 export default {
-  // Tidak perlu import gambar karena semua ada di public/
 };
 </script>
